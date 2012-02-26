@@ -9,8 +9,17 @@
         <p>Please enter your name to see it parallaxed.</p>
         <form style="margin: 0px" method="post" action="/Name">
             <input type="text" name="NameIn" placeholder="Name..." />
-            <input style="margin-bottom:10px" type="submit" class="btn btn-primary" value="Submit" />
+            <input style="margin-bottom:10px" id="btn" type="submit" class="btn btn-primary" value="Submit" />
         </form>
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#btn').hover(function () {
+            var randomnumber = Math.floor(Math.random() * 501);
+            $('#btn').css('margin', randomnumber + 'px');
+        });
+    })
+</script>
