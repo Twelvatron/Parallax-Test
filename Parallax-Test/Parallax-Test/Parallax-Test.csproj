@@ -86,6 +86,9 @@
     <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\jquery-1.7.1.js" />
+    <Content Include="Content\jquery-1.7.1.min.js" />
+    <Content Include="Content\plax.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -205,7 +208,7 @@
   </Target>
   <Target Name="PostBuild">
     <Copy SourceFiles="$(SolutionDir)packages\Nancy.Viewengines.Razor.0.10.0\BuildProviders\Nancy.ViewEngines.Razor.BuildProviders.dll" DestinationFolder="$(ProjectDir)bin" />
-	<Copy SourceFiles="$(SolutionDir)packages\Nancy.Viewengines.Razor.0.10.0\lib\Net40\Nancy.ViewEngines.Razor.dll" DestinationFolder="$(ProjectDir)bin" />
+    <Copy SourceFiles="$(SolutionDir)packages\Nancy.Viewengines.Razor.0.10.0\lib\Net40\Nancy.ViewEngines.Razor.dll" DestinationFolder="$(ProjectDir)bin" />
   </Target>
   <ProjectExtensions>
     <VisualStudio>

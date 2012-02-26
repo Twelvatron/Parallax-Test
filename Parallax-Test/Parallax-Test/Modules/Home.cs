@@ -12,7 +12,7 @@ namespace Parallax_Test.Modules
         public Home()
         {
             Get["/"] = _ => "Parallax me";
-            Get["/{pname}"] = pname;
+            Get["/Name/{pname}"] = pname;
         }
 
         public Response pname(dynamic parameters)
