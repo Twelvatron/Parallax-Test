@@ -1,0 +1,14 @@
+﻿@{
+    Layout = "Shared/_Layout.cshtml";
+    var model = Model;
+}
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="hero-unit">
+            @foreach (var letter in model)
+            {
+                <h1 style="display:inline">@letter</h1>
+            }
+        </div>
+    </div>
+</div>
