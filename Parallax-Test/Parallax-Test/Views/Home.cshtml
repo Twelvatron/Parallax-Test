@@ -2,15 +2,15 @@
     Layout = "Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    <div>
-    
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="hero-unit">
+        <h1>Parallax Me</h1>
+        <p>Please enter your name to see it parallaxed.</p>
+        <form style="margin: 0px" method="post" action="/Name">
+            <input type="text" name="NameIn" placeholder="Name..." />
+            <input style="margin-bottom:10px" type="submit" class="btn btn-primary" value="Submit" />
+        </form>
     </div>
-</body>
-</html>
+  </div>
+</div>

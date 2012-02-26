@@ -11,8 +11,21 @@ namespace Parallax_Test.Modules
     {
         public Home()
         {
-            Get["/"] = _ => "Parallax me";
+            Get["/"] = home;
             Get["/Name/{pname}"] = pname;
+            Post["/Name"] = submitName;
+        }
+
+        public Response home(dynamic parameters)
+        {
+            return View["Home.cshtml"];
+        }
+
+        public Response submitName(dynamic parmeters)
+        {
+            string nameIn = Request.Form.NameIn;
+            char[] name = nameIn.ToCharArray();
+            return View["Name.cshtml", name];
         }
 
         public Response pname(dynamic parameters)
